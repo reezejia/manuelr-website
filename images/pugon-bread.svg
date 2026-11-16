@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Illustration of fresh pan de suelo bread in a wood-fired oven">
+  <rect width="800" height="450" fill="#6B3E26"/>
+  <path d="M100 450 V220 Q100 60 400 60 Q700 60 700 220 V450 Z" fill="#2B2118"/>
+  <path d="M150 450 V235 Q150 105 400 105 Q650 105 650 235 V450 Z" fill="#8a4a1f"/>
+  <ellipse cx="400" cy="400" rx="200" ry="22" fill="#D9822B" opacity=".55"/>
+  <g fill="#E3A857" stroke="#6B3E26" stroke-width="4">
+    <ellipse cx="290" cy="330" rx="62" ry="38"/>
+    <ellipse cx="400" cy="300" rx="62" ry="38"/>
+    <ellipse cx="510" cy="330" rx="62" ry="38"/>
+    <ellipse cx="345" cy="375" rx="62" ry="36"/>
+    <ellipse cx="455" cy="375" rx="62" ry="36"/>
+  </g>
+  <g stroke="#6B3E26" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M360 295 Q400 280 440 295"/><path d="M250 325 Q290 310 330 325"/><path d="M470 325 Q510 310 550 325"/>
+  </g>
+</svg>
