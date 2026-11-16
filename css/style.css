@@ -1,0 +1,188 @@
+/*
+  Kamuning Bakery Cafe - Color Palette
+  Pugon Brown   #6B3E26  headings, header, footer
+  Flour Cream   #FBF4E8  page background
+  Ember Orange  #D9822B  buttons and links
+  Ube Purple    #6A4C93  small highlights and tags
+  Charcoal      #2B2118  body text
+*/
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2B2118;
+  background-color: #FBF4E8;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #6B3E26;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* ---------- Header and navigation ---------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #6B3E26;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.brand img { width: 56px; height: 56px; }
+
+.brand-name {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FBF4E8;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #FBF4E8;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: #D9822B;
+  color: #2B2118;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+
+.badge {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FBF4E8;
+  background-color: #6A4C93;
+  border-radius: 999px;
+}
+
+.tagline { font-size: 1.25rem; margin-bottom: 1.5rem; }
+
+.hero-img { border-radius: 16px; box-shadow: 0 6px 16px rgba(43, 33, 24, 0.25); }
+
+/* ---------- Call-to-action button ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background-color: #D9822B;
+  color: #2B2118;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #6B3E26;
+  color: #FBF4E8;
+  transform: translateY(-2px);
+}
+
+/* ---------- Sections ---------- */
+.about,
+.highlights {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.about { max-width: 800px; text-align: center; }
+.about h2, .highlights h2 { font-size: 2rem; margin-bottom: 1rem; }
+.highlights h2 { text-align: center; }
+
+.award {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6A4C93;
+  border: 2px solid #6A4C93;
+  border-radius: 999px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-top: 5px solid #D9822B;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(43, 33, 24, 0.12);
+}
+
+.card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+.card p { margin: 0; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  color: #FBF4E8;
+  background-color: #6B3E26;
+}
+
+.site-footer p { margin: 0.3rem 0; }
+.site-footer a { color: #D9822B; }
+
+/* ---------- Small screens (stretch goal) ---------- */
+@media (max-width: 768px) {
+  .site-header { flex-direction: column; padding: 1rem; }
+  .nav-list { justify-content: center; }
+  .hero { grid-template-columns: 1fr; padding: 2rem 1rem; text-align: center; }
+  .hero h1 { font-size: 2.1rem; }
+  .about, .highlights { padding: 1rem; }
+}
